@@ -1,43 +1,44 @@
 #main_first_block_div {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 80%;
+    height: 100%;
     background: white;
 }
 
 .first_block_background {
     position: absolute;
     background-color: #F4F9E2;
-    width: 1900px;
+    width: 80%;
+    min-width: 1500px;
     height: 100%;
-    left: 0px;
-    top: 0px;
+    min-height: 900px;
 }
 
 #logo_top {
     position: absolute;
-    width: 484px;
-    height: 27px;
-    left: 200px;
-    top: 45px;
-    font-size: 32px;
-    line-height: 27px;
+    top: 4%;
+    left: 10%;
+    font-size: 25px;
+    line-height: 0px;
     letter-spacing: -0.035em;
     color: #62D0DF;
 }
 
 .menu {
-    position: fixed;
-    width: 350px;
-    height: 60px;
-    top: 65px;
-    left: 1000px;
+    position: relative;
+    width: 60%;
+    min-width: 1000px;
+    height: 30px;
+    top: 2%;
+    left: 50%;
 }
 
 .menu_elements {
+    position: relative;
     font-size: 20px;
     margin-left: 20px;
     color: #22356F;
+    top: 20px;
     text-decoration: none;
 }
 
@@ -47,39 +48,108 @@
 }
 
 #contact_us {
+    position: absolute;
     width: 170px;
-    height: 60px;
+    height: 50px;
     background-color: #62D0DF;
     color: white;
     border-radius: 50px;
     border: 0px;
-    margin-top: 5%;
-    margin-right: 30%;
+    right: 0px;
     font-size: 15px;
+    top: 5px;
 }
 
 #contact_us:hover {
-    border: 1px solid #22356F;
+    border: 1px solid #62D0DF;
+    background: white;
+    color: #62D0DF;
 }
 
 #decorate_insert {
     position: absolute;
-    width: 900px;
-    height: 600px;
+    width: 65%;
+    min-width: 1000px;
+    height: 70%;
+    min-height: 600px;
     border-radius: 312.159px;
     transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
     background: white;
-    bottom: 35%;
-    left: 80%;
+    bottom: 25%;
+    left: 72%;
 }
 
 #photo_insert {
-    position: absolute;
-    background-image: url("src/slinkedin-sales-navigator-406825.jpg");
-    width: 900px;
-    height: 600px;
+    position: relative;
+    width: 85%;
+    min-width: 1000px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 500px;
     border-radius: 312.159px;
     transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
-    left: 20px;
-    top: 70px;
+    left: 5%;
+    top: 9%;
+}
+
+#first_block_photo {
+    position: absolute;
+    left: -30%;
+    bottom: -10%;
+    width: 135%;
+    transform: rotate(30.5deg);
+    
+}
+
+#logo_bottom {
+    position: absolute;
+    font-size: 25px;
+    line-height: 0px;
+    letter-spacing: -0.035em;
+    color: #62D0DF;
+    top: 30%;
+    left: 10%;
+}
+
+#first_block_header {
+    position: absolute;
+    color: #22356F;
+    font-size: 48px;
+    line-height: 53px;
+    letter-spacing: -0.035em;
+    left: 10%;
+    top: 33%;
+}
+
+#first_block_text {
+    position: absolute;
+    line-height: 42.19px;
+    color: #22356F;
+    font-size: 24px;
+    left: 10%;
+    top: 53%;
+}
+
+#first_block_bottom_buttons {
+    position: absolute;
+    background: #F4F9E2;
+    width: 365px;
+    height: 50px;
+    left: 10%;
+    top: 80%;
+}
+
+.bottom_buttons {
+    position: relative;
+    background-color: #F4F9E2;
+    border: 0px;
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    color:#FAB63E;
+}
+
+.bottom_buttons:hover {
+    color: white;
+    background-color: #FAB63E;
 }
