@@ -1,9 +1,254 @@
-@import "firstBlock.scss";
-@import "secondBlock.scss";
-@import "thirdBlock.scss";
-
-body {
-    background-color: white;
-    font-family: 'Instrument Sans', sans-serif;
-    overflow-x: hidden;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Instrument-Thrivetalk;
 }
+
+:root {
+    --index: calc(1vw + 1vh);
+    --sky-color: rgba(98, 208, 223, 1);
+    --link-color: rgba(34, 53, 111, 1);
+    --greetings-color: rgba(244, 249, 226, 1);
+    --orange-color: rgba(249, 182, 64, 1);
+    --gray-color: rgba(34, 53, 111, 0.5);
+}
+
+@font-face {
+    font-family: Instrument-Thrivetalk;
+    src: url(../fonts/InstrumentSans-VariableFont_wdth\,wght.ttf);
+    font-style: normal;
+    font-stretch: 100%;
+    font-display: swap;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+//...................Начало стилизации блока Head.......................................
+
+.head {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: calc(var(--index) * 2);
+    align-items: center;
+    height: calc(var(--index) * 2);
+    margin: calc(var(--index) * 0.8) calc(var(--index) * 7);
+}
+
+.logo {
+    justify-self: start;
+    align-self: start;
+}
+
+.logo__main-logo {
+    font-size: calc(var(--index) * 1.2);
+    color: var(--sky-color);
+}
+
+.menu {
+    justify-self: center;
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-list__link {
+    display: block;
+    padding: calc(var(--index) * 0.4) calc(var(--index) * 0.8);
+    text-decoration: none;
+    font-size: calc(var(--index) * 0.6);
+    color: var(--link-color);
+    margin-right: calc(var(--index) * 0.3);
+}
+
+.menu-list__link:hover {
+    border-bottom: 1px solid var(--link-color);
+}
+
+.menu-list li:nth-child(4) .menu-list__link {
+    margin-right: 0;
+}
+
+.button {
+    justify-self: end;
+    border-radius: 50%;
+}
+
+.button__contact-us {
+    display: block;
+    padding: calc(var(--index) * 0.6) calc(var(--index) * 1);
+    background-color: var(--sky-color);
+    border-radius: calc(var(--index) * 1);
+    color: white;
+    text-decoration: none;
+    font-size: calc(var(--index) * 0.6);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.button__contact-us:hover {
+    background-color: white;
+    border: 1px solid var(--sky-color);
+    color: var(--sky-color);
+}
+
+//....................Окончание стилизации блока Head..................................
+
+//..................Начало стилизации блока Greetings..................................
+
+.greetings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: calc(var(--index) * 10);
+    width: 100%;
+    background: linear-gradient(90deg, var(--greetings-color) 80%, white 20%);
+    padding: calc(var(--index) * 9) calc(var(--index) * 7) calc(var(--index) * 3);
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 1 1fr;
+    row-gap: calc(var(--index) * 1);
+}
+
+.second-logo {
+    margin-bottom: calc(var(--index) * 0.5);
+}
+
+.second-logo__logo {
+    font-size: calc(var(--index) * 1.2);
+    color: var(--sky-color);
+}
+
+.helping-you {
+    margin-bottom: calc(var(--index) * 1);
+}
+
+.helping-you__text {
+    font-size: calc(var(--index) * 1.95);
+    color: var(--link-color);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+}
+
+.our-therapists {
+    margin-bottom: calc(var(--index) * 0.5);
+}
+
+.our-therapists__text {
+    font-size: calc(var(--index) * 1);
+    line-height: calc(var(--index) * 1.8);
+    color: var(--link-color);
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons__button {
+    display: block;
+    padding: calc(var(--index) * 0.8) calc(var(--index) * 1.5);
+    margin-right: calc(var(--index) * 1);
+    font-size: calc(var(--index) * 0.7);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--orange-color);
+    white-space: nowrap;
+}
+
+.buttons__button:hover {
+    background-color: var(--orange-color);
+    color: white;
+}
+
+//................Окончание стилизации блока Greetings..................................
+
+//............... Начало стилизации блока WhyThrive.....................................
+
+.why-thrive {
+    width: 100%;
+    background-color: var(--sky-color);
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    column-gap: calc(var(--index) * 9);
+    padding-left: calc(var(--index) * 7);
+}
+
+.why-thrive-description {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: calc(var(--index) * 5.8);
+}
+
+.why-thrive-header {
+    margin-bottom: calc(var(--index) * 3);
+}
+
+.why-thrive-header__header {
+    font-size: calc(var(--index) * 1.5);
+    color: white;
+    font-weight: 900;
+}
+
+.why-thrive-content {
+    margin-bottom: calc(var(--index) * 4);
+}
+
+.why-thrive-content__content {
+    font-size: calc(var(--index) * 1);
+    color: white;
+}
+
+.why-thrive-content__content__size__size-up {
+    font-size: calc(var(--index) * 1.2);
+    font-weight: 900;
+}
+
+.why-thrive-photo {
+    background-image: url('/img/02.png');
+    background-size: cover;
+}
+
+//................Окончание стилизации блока WhyThrive..................................
+
+//................Начало стилизации блока About.........................................
+
+.about {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 0.8fr;
+    margin: calc(var(--index) * 5) calc(var(--index) * 4) calc(var(--index) * 1.2);
+}
+
+.about-us__header {
+    font-size: calc(var(--index) * 0.7);
+    font-weight: 300;
+    color: var(--link-color);
+}
+
+.about-us-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: calc(var(--index) * 4);
+}
+
+.we-want-help__content {
+    font-size: calc(var(--index) * 0.9);
+    font-weight: 400;
+    color: var(--link-color);
+}
+
+.we-can-help {
+    justify-self: center;
+}
+
+.we-can-help__content {
+    font-size: calc(var(--index) * 0.6);
+    color: var(--gray-color);
+}
+
+//................Окончание стилизации блока About.....................................
