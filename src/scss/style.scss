@@ -6,12 +6,18 @@
 }
 
 :root {
-  --index: calc(1vw + 1vh);
-  --sky-color: rgba(98, 208, 223, 1);
-  --link-color: rgba(34, 53, 111, 1);
-  --greetings-color: rgba(244, 249, 226, 1);
-  --orange-color: rgba(249, 182, 64, 1);
-  --gray-color: rgba(34, 53, 111, 0.5);
+    --index: calc(1vw + 1vh);
+    --sky-color: rgba(98, 208, 223, 1);
+    --link-color: rgba(34, 53, 111, 1);
+    --greetings-color: rgba(244, 249, 226, 1);
+    --orange-color: rgba(249, 182, 64, 1);
+    --gray-color: rgba(34, 53, 111, 0.5);
+    --pink-color: rgba(255, 226, 222, 1);
+    --green-color: rgba(196, 231, 105, 1);
+    --blue-color: rgba(0, 82, 193, 1);
+    --list-style-color: rgba(233, 183, 48, 1);
+    --beige-color: rgba(222, 225, 255, 1);
+    --violet-color: rgba(143, 0, 255, 1);
 }
 
 @font-face {
@@ -229,8 +235,10 @@ header {
 }
 
 .why-thrive-photo {
-  background-image: url('../img/02.png');
-  background-size: cover;
+    background-image: url('/img/02.png');
+    background-size: cover;
+    min-width: calc(var(--index) * 19);
+    min-height: auto;
 }
 
 //................Окончание стилизации блока WhyThrive..................................
@@ -271,3 +279,271 @@ header {
 }
 
 //................Окончание стилизации блока About.....................................
+
+//................Начало стилизации блока Kinds of Sport...............................
+
+.kinds-of-sport {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.kinds-of-sport-block {
+    font-size: calc(var(--index) * 1);
+    color: white;
+    font-weight: 600;
+    padding: calc(var(--index) * 3.5) 15% calc(var(--index) * 7);
+}
+
+.kinds-of-sport-block__set-color-pink {
+    background-color: var(--pink-color);
+}
+
+.kinds-of-sport-block__set-color-green {
+    background-color: var(--green-color);
+}
+
+.kinds-of-sport-block__set-color-sky {
+    background-color: var(--sky-color);
+}
+
+.kinds-of-sport-block__set-color-blue {
+    background-color: var(--blue-color);
+}
+
+.kinds-of-sport-block__content {
+    display: flex;
+    padding: calc(var(--index) * 1) calc(var(--index) * 1.5) calc(var(--index) * 1) 0;
+    border-top: 1px solid white;
+}
+
+.kinds-of-sport-block__content::before {
+    content: '';
+    display: inline-block;
+    height: calc(var(--index) * 0.4);
+    width: calc(var(--index) * 0.4);
+    border-radius:50%;
+    background-color: var(--list-style-color);
+    margin-right: calc(var(--index) * 1);
+    margin-top: calc(var(--index) * 0.35);
+}
+
+//..........................Окончание стилизации блока Kinds of sport....................
+
+//........................Начало стилизации блока Health.................................
+
+.health {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.health-block {
+    font-size: calc(var(--index) * 1.3);
+    font-weight: 700;
+    color: white;
+    padding: calc(var(--index) * 3.5) 15% calc(var(--index) * 12);
+}
+
+.health-block__set-color-darkblue {
+    background-color: var(--link-color);
+}
+
+.health-block__set-color-blue {
+    background-color: var(--blue-color);
+}
+
+.health-block__set-backimage {
+    background-image: url('/img/03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.health-block__set-color-sky {
+    background-color: var(--sky-color);
+}
+
+.health-block__set-color-beige {
+    background-color: var(--beige-color);
+}
+
+.health-block__set-color-violet {
+    background-color: var(--violet-color);
+}
+
+.health-block__content {
+    display: flex;
+    padding: calc(var(--index) * 1.5) calc(var(--index) * 1.5) calc(var(--index) * 1) 0;
+    border-top: 1px solid white;
+}
+
+.health-block__content::before {
+    content: '';
+    display: inline-block;
+    height: calc(var(--index) * 0.4);
+    width: calc(var(--index) * 0.4);
+    border-radius:50%;
+    background-color: var(--list-style-color);
+    margin-right: calc(var(--index) * 1);
+    margin-top: calc(var(--index) * 0.6);
+}
+
+.save-health-methods {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.save-health-methods__header {
+    margin: calc(var(--index) * 3) calc(var(--index) * 5) 0;
+    color: var(--link-color);
+    font-weight: 200;
+    font-size: calc(var(--index) * 1.2);
+    letter-spacing: calc(var(--index) * -0.01);
+}
+
+.save-health-methods__content {
+    margin: calc(var(--index) * 2) calc(var(--index) * 5) calc(var(--index) * 3);
+    color: var(--gray-color);
+    font-size: calc(var(--index) * 0.7);
+}
+
+.save-health-methods__header__fixed-margin {
+    margin-top: calc(var(--index) * 0.7);
+}
+
+//.......................Окончание стилизации блока Health...............................
+
+//.......................Начало стилизации блока Also know...............................
+
+.also-know {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.also-know-photo {
+    background-image: url('/img/04.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.also-know-content {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.also-know-content__header {
+    font-size: calc(var(--index) * 0.7);
+    color: var(--link-color);
+    margin: calc(var(--index) * 4.5) 0 calc(var(--index) * 10) calc(var(--index) * 5);
+}
+
+.also-know-content__content {
+    font-size: calc(var(--index) * 1.5);
+    margin: 0 calc(var(--index) * 10) calc(var(--index) * 11.5) calc(var(--index) * 5);
+    color: var(--link-color);
+    font-weight: 600;
+}
+
+.also-know-content__button {
+    display: block;
+    width: calc(var(--index) * 7);
+    text-align: center;
+    padding: calc(var(--index) * 0.8) 0;
+    margin: 0 0 calc(var(--index) * 2) calc(var(--index) * 5);
+    text-decoration: none;
+    font-size: calc(var(--index) * 0.7);
+    color: var(--orange-color);
+    font-weight: 700;
+}
+
+.also-know-content__button:hover {
+    color: white;
+    background-color: var(--orange-color);
+}
+
+//...................Окончание стилизации блока Also Know..............................
+
+//....................Начало стилизации блока Contact Us...............................
+
+.contact-us {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-us-content {
+    grid-column: span 2;
+    background-color: var(--link-color);
+}
+
+.contact-us-content__header {
+    font-size: calc(var(--index) * 0.7);
+    color: white;
+    margin: calc(var(--index) * 4.5) 0 calc(var(--index) * 10) calc(var(--index) * 7);
+}
+
+.contact-us-content__ready-set-smile {
+    font-size: calc(var(--index) * 2.5);
+    margin: 0 calc(var(--index) * 10) calc(var(--index) * 3) calc(var(--index) * 7);
+    color: white;
+    font-weight: 600;
+}
+
+.contact-us-content__content {
+    font-size: calc(var(--index) * 1.4);
+    margin: 0 calc(var(--index) * 13) calc(var(--index) * 4) calc(var(--index) * 7);
+    color: white;
+    font-weight: 100;
+    line-height: calc(var(--index) * 2.7);
+}
+
+.contact-us-content__button {
+    display: block;
+    width: calc(var(--index) * 7);
+    text-align: center;
+    padding: calc(var(--index) * 0.8) 0;
+    margin: 0 0 calc(var(--index) * 2) calc(var(--index) * 7);
+    text-decoration: none;
+    font-size: calc(var(--index) * 0.7);
+    color: var(--sky-color);
+    font-weight: 700;
+}
+
+.contact-us-content__button:hover {
+    color: var(--link-color);
+    background-color: var(--sky-color);
+}
+
+.contact-us-photo {
+    background-image: url('/img/05.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+//....................Окончание стилизации блока Contact Us.............................
+
+//....................Начало стилизации футера..........................................
+
+.page-footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+}
+
+.page-footer-photo {
+    background-image: url('/img/06.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.copyright {
+    padding: calc(var(--index) * 1) 0 calc(var(--index) * 1) calc(var(--index) * 4);
+    background-color: var(--sky-color);
+    color: white;
+    font-size: calc(var(--index) * 0.55);
+    font-weight: 500;
+}
+
+//....................Окончание стилизации футера........................................
