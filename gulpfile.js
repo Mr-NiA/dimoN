@@ -23,7 +23,7 @@ gulp.task('server', function () {
 });
 
 gulp.task('styles', function () {
-    return gulp.src("src/scss/*.scss")
+    return gulp.src("src/scss/style.scss")
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({
             prefix: "", suffix: ".min",
