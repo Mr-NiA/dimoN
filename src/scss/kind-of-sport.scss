@@ -1,0 +1,53 @@
+.kind-of-sport {
+    width: 100%;
+    height: 480px;
+}
+
+.kind-of-sport-list {
+    display: flex;
+}
+
+.kind-of-sport-item {
+    width: 25%;
+    height: 360px;
+    
+    p {
+        position: relative;
+        width: 255px;
+        color: white;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -0.2px;
+        margin: 72px auto 0;
+        border-top: 2px solid white;
+        padding: 23px 0 0 25.5px;
+    }
+
+    p::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: $orange;
+        top: 38px;
+        left: 2px;
+    }
+}
+
+.pink {
+    background-color: $pink;
+}
+
+.green {
+    background-color: $green;
+}
+
+.sky {
+    background-color: $skyBlue;
+}
+
+.blue {
+    background-color: $blue;
+}

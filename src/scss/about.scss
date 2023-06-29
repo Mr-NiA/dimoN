@@ -1,0 +1,35 @@
+.about {
+    width: 100%;
+    height: 481px;
+    background-color: #fff;
+    color: $darkBlue;
+    letter-spacing: 0.96px;
+    display: flex;
+    padding: 150px 106px 121px;
+    column-gap: 225px;
+
+    h2 {
+        width: 93px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.about-wrapper {
+    width: 592px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 76px;
+}
+
+.about-wrapper p:first-child {
+    font-weight: 500;
+    letter-spacing: 0.12px;
+    font-size: 24px;
+}
+
+.about-wrapper p:last-child {
+    font-size: 16px;
+    font-weight: 400;
+}
