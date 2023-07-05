@@ -3,12 +3,12 @@
     height: 1600px;
 }
 
-.temptation-wrapper {
+.temptation__wrapper {
     display: flex;
     column-gap: 201px;
 }
 
-.temptation-content-one {
+.temptation__content__one {
     display: flex;
     flex-direction: column;
     margin-right: auto;
@@ -52,7 +52,7 @@
     }
 }
 
-.temptation-content-two {
+.temptation__content__two {
     display: flex;
     flex-direction: column;
     column-gap: 201px;

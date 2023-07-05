@@ -1,10 +1,10 @@
-.page-header {
+header {
     position: absolute;
     width: 100%;
     z-index: 2;
 }
 
-.site-navigation {
+.navigation {
     display: flex;
     justify-content: space-between;
     padding: 27px 179px 0;
@@ -17,7 +17,7 @@
     font-weight: 700;
 }
 
-.navbar-list {
+.navigation__list {
     display:flex;
     column-gap: 11px;
     margin-top: 10px;
@@ -49,6 +49,7 @@
 
 .contact-us-link:hover {
     border: 1px solid $skyBlue;
+    padding-top: 17px;
     background-color: white;
     color: $skyBlue;
 }
